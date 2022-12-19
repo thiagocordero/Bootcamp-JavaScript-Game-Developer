@@ -11,7 +11,7 @@ let recorde = 0;
 let pontos = `<h2> PONTUAÇÃO: ${cactosPulados} </h2>`;
 document.getElementById("placar").innerHTML = pontos;
 
-const dino_width = 150;
+const dino_width = 100;
 const cactus_width = 80;
 let position = 0;
 

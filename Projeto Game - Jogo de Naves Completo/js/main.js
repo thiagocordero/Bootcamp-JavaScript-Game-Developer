@@ -140,8 +140,8 @@ function start() {
             somDisparo.play();
             podeAtirar=false;
             
-            topo = parseInt($("#jogador").css("top"))
-            posicaoX= parseInt($("#jogador").css("left"))
+            topo = parseInt($("#jogador").css("top"));
+            posicaoX= parseInt($("#jogador").css("left"));
             tiroX = posicaoX + 190;
             topoTiro=topo+37;
             $("#fundoGame").append("<div id='disparo'></div");
@@ -257,9 +257,8 @@ function start() {
     //Explosão 1 =  Jogador com Inimigo 1
     function explosao1(inimigo1X,inimigo1Y) {
         somExplosao.play();
-
         $("#fundoGame").append("<div id='explosao1'></div");
-        $("#explosao1").css("background-image", "url(/img/explosao.png)");
+        $("#explosao1").css("background-image", "url(../img/explosao.png)");
         var div=$("#explosao1");
         div.css("top", inimigo1Y);
         div.css("left", inimigo1X);
@@ -279,7 +278,7 @@ function start() {
         somExplosao.play();
 
         $("#fundoGame").append("<div id='explosao2'></div");
-        $("#explosao2").css("background-image", "url(/img/explosao.png)");
+        $("#explosao2").css("background-image", "url(../img/explosao.png)");
         var div2=$("#explosao2");
         div2.css("top", inimigo2Y);
         div2.css("left", inimigo2X);
@@ -345,17 +344,16 @@ function start() {
     function energia() {
 	
 		if (energiaAtual==3) {
-			$("#energia").css("background-image", "url(/img/energia3.png)");
+			$("#energia").css("background-image", "url(../img/energia3.png)");
 		}
 		if (energiaAtual==2) {	
-			$("#energia").css("background-image", "url(/img/energia2.png)");
+			$("#energia").css("background-image", "url(../img/energia2.png)");
 		}
 		if (energiaAtual==1) {
-			$("#energia").css("background-image", "url(/img/energia1.png)");
+			$("#energia").css("background-image", "url(../img/energia1.png)");
 		}
 		if (energiaAtual==0) {
-			$("#energia").css("background-image", "url(/img/energia0.png)");
-			
+			$("#energia").css("background-image", "url(../img/energia0.png)");
 			gameOver();
 		}
 	}
@@ -376,7 +374,7 @@ function start() {
         
         $("#fundoGame").append("<div id='fim'></div>");
         
-        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' cursor='pointer' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' cursor='pointer' onClick='reiniciaJogo()'><h3>Jogar Novamente</h3></div>");
     }   
 }
 

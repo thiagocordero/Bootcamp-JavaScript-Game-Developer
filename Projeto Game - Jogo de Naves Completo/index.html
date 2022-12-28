@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+        
+            <link rel="stylesheet" href="style/main.css">
+            <title>RESGATE</title>
 
-<head>
-    <meta charset="UTF-8">
-   
-    <link rel="stylesheet" href="style/main.css">
-    <title>RESGATE</title>
+        </head>
 
-</head>
-
-<body>
-    <div id="container">
-        <div id="fundoGame">
-
-            <div onclick="start()"  id="inicio"> <h1> Resgate </h1> 
-                <p>Utilize a tecla W para movimentar o helicóptero para cima, a tecla S para movimentar o helicóptero para baixo e a tecla D para atirar.</p>
-                <p> Clique aqui para iniciar!! </p>
+        <body>
+            <div id="container">
+                <div id="fundoGame" onclick="start()">
+                    <div id="inicio"> <h1> Resgate </h1> 
+                        <p> Utilize a tecla W para movimentar o helicóptero para cima, a tecla S para movimentar o helicóptero para baixo e a tecla D para atirar.</p>
+                        <p> Clique aqui para iniciar!! </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Sons do jogo !-->
-    <audio src="sound/som.mp3" preload="auto" id="somDisparo"></audio>
-    <audio src="sound/explosao.mp3" preload="auto" id="somExplosao"></audio>
-    <audio src="sound/musica_fundo.mp3" preload="auto" id="musica"></audio>
-    <audio src="sound/gameover.mp3" preload="auto" id="somGameover"></audio>
-    <audio src="sound/perdido.mp3" preload="auto" id="somPerdido"></audio>	
-    <audio src="sound/resgate.mp3" preload="auto" id="somResgate"></audio>
+            <!-- Sons do jogo !-->
+            <audio src="sound/som.mp3" preload="auto" id="somDisparo"></audio>
+            <audio src="sound/explosao.mp3" preload="auto" id="somExplosao"></audio>
+            <audio src="sound/musica_fundo.mp3" preload="auto" id="musica"></audio>
+            <audio src="sound/gameover.mp3" preload="auto" id="somGameover"></audio>
+            <audio src="sound/perdido.mp3" preload="auto" id="somPerdido"></audio>	
+            <audio src="sound/resgate.mp3" preload="auto" id="somResgate"></audio>
 
-    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/jquery-collision.min.js"></script>
-
-</body>
+            <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
+            <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+        </body>
 </html>

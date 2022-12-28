@@ -1,6 +1,6 @@
 @font-face {
     font-family: Titulo;
-    src: url(/fontes/ANODETONOONE.TTF);
+    src: url(../fontes/ANODETONOONE.TTF);
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-    background-image: url(/img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
 }
 
 #container {
@@ -24,7 +24,7 @@ body {
 #fundoGame {
 	width:950px;
 	height:630px;
-	background-image:url(/img/fundo_game.jpg);
+	background-image:url(../img/fundo_game.jpg);
 	border-color:#FFF;
 	border-style:solid;   
 }
@@ -47,7 +47,7 @@ body {
 	position:absolute;
 	left:8px;
 	top:179px;
-    background-image:url(/img/apache.png);
+    background-image:url(../img/apache.png);
 }
 
 #inimigo1 {
@@ -56,7 +56,7 @@ body {
 	position: absolute;
 	left: 689px;
 	top: 253px;
-	background-image:url(/img/inimigo1.png);
+	background-image:url(../img/inimigo1.png);
 	
 }
 
@@ -66,7 +66,7 @@ body {
 	position: absolute;
 	left: 775px;
 	top: 447px;
-	background-image: url(/img/inimigo2.png);
+	background-image: url(../img/inimigo2.png);
 }
 
 #amigo {
@@ -75,13 +75,13 @@ body {
 	position: absolute;
 	left: 10px;
 	top: 464px;
-	background-image:url(/img/amigo.png);
+	background-image:url(../img/amigo.png);
 }
 
 /* Animação 1: Jogador (Hélices do Helicóptero) */
 
 .anima1 {
-    background-image: url(/img/apache.png);
+    background-image: url(../img/apache.png);
     animation: play .5s steps(2) infinite;
 
     /*Essa parte foi adicionada para não dar conflito nos navegadores*/
@@ -120,7 +120,7 @@ body {
  /* Animação 2: Inimigo 1 (Hélices do Helicóptero) */
 
  .anima2 {
-    background-image:url(/img/inimigo1.png);
+    background-image:url(../img/inimigo1.png);
     animation: play .5s steps(2) infinite;
 
     /*Como tanto a imagem do jogador quanto a do inimigo tem o mesmo tamanho, 
@@ -132,7 +132,7 @@ body {
 }
 
 .anima3 {
-	background-image:url(/img/amigo.png);
+	background-image:url(../img/amigo.png);
 	animation:play2 .9s steps(12) infinite;
 	
     -webkit-animation: play2 .9s steps(12) infinite;
@@ -169,7 +169,7 @@ body {
 .anima4 {
 	width:44px;
 	height:51px;
-	background-image:url(/img/amigo_morte.png);
+	background-image:url(../img/amigo_morte.png);
 	animation: play3 .5s steps(7) infinite;
 	
     -webkit-animation: play3 .5s steps(7) infinite;
@@ -210,7 +210,7 @@ body {
 	width: 50px;
 	height: 8px;
 	position: absolute;
-	background-image: url(/img/disparo.png);
+	background-image: url(../img/disparo.png);
 }
 
 #explosao1 {
